@@ -1,0 +1,39 @@
+# Test customer service
+
+### call find by id customer service
+GET http://localhost:8080/customer/1
+Content-Type: application/json
+
+
+### call save customer service
+POST  http://localhost:8080/customer
+Content-Type: application/json
+
+{
+  "firstName": "ehsan",
+  "latName": "gholizade",
+  "email": "e.gh",
+  "phoneNumber": "0938",
+  "address": "tehran"
+}
+
+###  call update customer service
+PUT http://localhost:8080/customer
+Content-Type: application/json
+
+{
+  "id": 2,
+  "firstName": "ali",
+  "latName": "alavi",
+  "email": "a.a",
+  "phoneNumber": "7894",
+  "address": "yazd"
+}
+
+### call delete customer service
+DELETE http://localhost:8080/customer/2
+Content-Type: application/json
+
+### call find All customer service
+GET http://localhost:8080/customer
+Content-Type: application/json

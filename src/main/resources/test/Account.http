@@ -1,0 +1,133 @@
+# Test account service
+
+POST http://localhost:8080/account/opening_account/current_account
+Content-Type: application/json
+
+{
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/deposit/current_account?amount=200
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/withdraw/current_account?amount=50
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 200,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/opening_account/savingAccount
+Content-Type: application/json
+
+{
+  "accountNumber": 456789,
+  "cardNumber": 456789,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/deposit/savingAccount?amount=200
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/withdraw/savingAccount?amount=50
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 200,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/opening_account/shortTermAccount
+Content-Type: application/json
+
+{
+  "accountNumber": 998877,
+  "cardNumber": 998877,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/deposit/shortTermAccount?amount=200
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 0,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
+
+POST http://localhost:8080/account/withdraw/shortTermAccount?amount=50
+Content-Type: application/json
+
+{
+  "id": 1,
+  "accountNumber": 123456,
+  "cardNumber": 123456,
+  "balance": 200,
+  "customer": {
+    "id": 1
+  }
+}
+
+###
